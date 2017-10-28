@@ -36,6 +36,7 @@ header .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 
 header .logo img {
@@ -49,6 +50,10 @@ header ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header ul.mobile {
+  display: none;
 }
 
 header ul li {
@@ -91,6 +96,10 @@ header .header-banner {
   height: 8rem;
   margin: 3rem;
 
+}
+
+.service p {
+  line-height: 1.4;
 }
 
 .service.exams img {
@@ -147,5 +156,157 @@ footer .logo img {
   height: 1.5rem;
   width: auto;
   padding: 4rem 1rem 4rem 4rem;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: 22rem;
+    width: 100%;
+  }
+
+  header .flex.container.nav-banner {
+    position: static;
+  }
+
+
+  header .flex.container.banner {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header .header-banner {
+    display: inline-block;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    background-color: white;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .container {
+      width: 100%;
+    }
+
+    header {
+      background-position: 20%;
+      height: 17rem;
+      width: 100%;
+    }
+
+     .logo span {
+      display: none;
+    }
+
+    header .flex.container.nav-banner {
+      position: static;
+    }
+
+    header ul.desktop-tablet {
+      display: none;
+    }
+
+    header ul.mobile {
+      display: flex;
+    }
+
+    header .header-banner {
+      display: inline-block;
+      width: 100%;
+      margin-top: 9rem;
+      margin-right: 0;
+      margin-left: 0;
+      background-color: white;
+      padding: 1rem 0;
+      font-size: 1rem;
+      line-height: 1.2;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .flex.container.services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3.77rem;
+      margin-bottom: 3.77rem;
+
+    }
+
+    .service {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      width: 5rem;
+      height: auto;
+      margin: 0;
+
+    }
+    .service.exams  {
+      margin-bottom: 1.54rem;
+    }
+
+    .service.fittings  {
+      margin-bottom: 1.54rem;
+    }
+
+    .service p {
+      font-size: 0.77rem;
+      margin-top: 1rem;
+    }
+
+    .flex.container.info {
+      display: block;
+      justify-content: center;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    .box {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .box .title {
+      text-align: center;
+      width: 100%;
+
+
+    }
+
+  .box .text {
+      margin: 1rem 1rem 0 1rem;
+      line-height: 1.4;
+    }
+  .box.philosophy {
+    margin-bottom: 4rem;
+  }
+
+
+  footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  footer .logo img {
+    height: 1.5rem;
+    width: auto;
+    padding: 4rem;
 
 }
